@@ -1,6 +1,6 @@
 #include "AppDelegate.h"
-#include "HelloWorldScene.h"
-
+#include "TestLayer.h"
+#include "CGFScene.h"
 USING_NS_CC;
 
 AppDelegate::AppDelegate() {
@@ -25,11 +25,10 @@ bool AppDelegate::applicationDidFinishLaunching() {
 
     // set FPS. the default value is 1.0/60 if you don't call this
     director->setAnimationInterval(1.0 / 60);
-
-    // create a scene. it's an autorelease object
-    auto scene = HelloWorld::createScene();
-
-    // run
+    
+    auto scene = CGFScene::create();
+    auto layer = TestLayer::create();
+    scene->addChild(layer);
     director->runWithScene(scene);
 
     return true;
