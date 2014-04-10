@@ -2,16 +2,14 @@
 
 USING_NS_CC;
 
-// on "init" you need to initialize your instance
 bool TestLayer::init()
 {
-    //////////////////////////////
-    // 1. super init first
-    if ( !Layer::init() )
+    if (!CGFLayer::init())
     {
         return false;
     }
     
+//    this->setTouchEnabled(true);
     Size visibleSize = Director::getInstance()->getVisibleSize();
     Point origin = Director::getInstance()->getVisibleOrigin();
 
@@ -60,6 +58,21 @@ bool TestLayer::init()
     return true;
 }
 
+void TestLayer::onEnter()
+{
+    ////设置为单点响应
+    //setTouchMode(Touch::DispatchMode::ONE_BY_ONE);
+    ////设置为多点响应（默认）
+//    this->setTouchEnabled(true);
+//    this->setTouchMode(Touch::DispatchMode::ALL_AT_ONCE);
+//    _touchListener = EventListenerTouchOneByOne::create();
+//    _touchListener->onTouchBegan = CC_CALLBACK_2(TestLayer::onTouchBegan, this);
+//    _touchListener->onTouchMoved = CC_CALLBACK_2(TestLayer::onTouchMoved, this);
+//    _touchListener->onTouchEnded = CC_CALLBACK_2(TestLayer::onTouchEnded, this);
+//    _touchListener->onTouchCancelled = CC_CALLBACK_2(TestLayer::onTouchCancelled, this);
+//    
+//    _eventDispatcher->addEventListenerWithSceneGraphPriority(_touchListener, this);
+}
 
 void TestLayer::menuCloseCallback(Ref* pSender)
 {
@@ -74,3 +87,5 @@ void TestLayer::menuCloseCallback(Ref* pSender)
     exit(0);
 #endif
 }
+
+

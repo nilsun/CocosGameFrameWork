@@ -4,16 +4,17 @@
 #include "cocos2d.h"
 #include "CGFLayer.h"
 
+using namespace cocos2d;
+
 class TestLayer : public CGFLayer
 {
 public:
-    // Here's a difference. Method 'init' in cocos2d-x returns bool, instead of returning 'id' in cocos2d-iphone
-    virtual bool init();  
+    virtual bool init();
     
-    // a selector callback
     void menuCloseCallback(cocos2d::Ref* pSender);
     
-    // implement the "static create()" method manually
+    virtual void onEnter();
+    
     CREATE_FUNC(TestLayer);
 };
 

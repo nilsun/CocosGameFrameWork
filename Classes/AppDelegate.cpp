@@ -28,6 +28,7 @@ bool AppDelegate::applicationDidFinishLaunching() {
     
     auto scene = CGFScene::create();
     auto layer = TestLayer::create();
+    layer->setCGFLayerDelegate(scene);
     scene->addChild(layer);
     director->runWithScene(scene);
 
