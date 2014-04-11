@@ -12,8 +12,8 @@ public:
     virtual bool init();
     
     void menuCloseCallback(cocos2d::Ref* pSender);
-    
-    virtual void onEnter();
+        
+    virtual bool onTouchBegan(Touch *touch, Event *unused_event);
     
     CREATE_FUNC(TestLayer);
 };

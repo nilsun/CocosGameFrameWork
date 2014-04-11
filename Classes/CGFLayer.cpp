@@ -11,7 +11,7 @@
 
 bool CGFLayer::onTouchBegan(Touch *touch, Event *unused_event)
 {
-   return m_pLayerDelegate->onLayerTouchBegan(this, touch);
+    return m_pLayerDelegate->onLayerTouchBegan(this, touch);
 }
 
 void CGFLayer::onTouchMoved(Touch *touch, Event *unused_event)

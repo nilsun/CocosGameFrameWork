@@ -17,6 +17,8 @@ class CGFLayerDelegate;
 class CGFLayer : public Layer
 {
 public:
+    CREATE_FUNC(CGFLayer);
+
     CGFLayerDelegate* m_pLayerDelegate;
     
     void setCGFLayerDelegate(CGFLayerDelegate* pLayerDelegate){ m_pLayerDelegate = pLayerDelegate; }
