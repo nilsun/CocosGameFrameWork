@@ -276,6 +276,7 @@
 		BB3161C218F56F7200F6803A /* CGFLayerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGFLayerDelegate.h; path = ../Classes/CGFLayerDelegate.h; sourceTree = "<group>"; };
 		BB37C34018F7F63F0071ACBA /* TestScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TestScene.cpp; path = ../Classes/TestScene.cpp; sourceTree = "<group>"; };
 		BB37C34118F7F63F0071ACBA /* TestScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestScene.h; path = ../Classes/TestScene.h; sourceTree = "<group>"; };
+		BB37C34918F8F0220071ACBA /* CGFMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGFMacros.h; path = ../Classes/CGFMacros.h; sourceTree = "<group>"; };
 		BF170DB012928DE900B8313A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		BF170DB412928DE900B8313A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		BF1C47EA1293683800B63C5D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -364,6 +365,7 @@
 				BB3161B318F5654500F6803A /* CGFLayer.h */,
 				BB3161C118F56F7200F6803A /* CGFLayerDelegate.cpp */,
 				BB3161C218F56F7200F6803A /* CGFLayerDelegate.h */,
+				BB37C34918F8F0220071ACBA /* CGFMacros.h */,
 			);
 			name = Classes;
 			path = ../classes;

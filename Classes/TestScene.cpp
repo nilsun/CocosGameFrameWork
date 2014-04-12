@@ -10,6 +10,11 @@
 
 bool TestScene::onLayerTouchBegan(CGFLayer* pLayer, Touch *pTouch)
 {
-    CCLOG("TestScene received TouchBegan event");
+    CCLOG("TestScene::onLayerTouchBegan invoked");
     return true;
+}
+
+void TestScene::onLayerTouchesBegan(CGFLayer* pLayer, const std::vector<Touch*> touches)
+{
+    CCLOG("TestScene::onLayerTouchesBegan invoked");
 }

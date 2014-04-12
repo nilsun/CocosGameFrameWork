@@ -19,6 +19,8 @@ class TestScene : public CGFScene
 public:
     virtual bool onLayerTouchBegan(CGFLayer* pLayer, Touch *pTouch);
     
+    virtual void onLayerTouchesBegan(CGFLayer* pLayer, const std::vector<Touch*> touches);
+    
     CREATE_FUNC(TestScene);
 };
 

@@ -10,23 +10,8 @@ bool TestLayer::init()
         return false;
     }
     
-	auto listener = EventListenerTouchOneByOne::create();
-	listener->onTouchBegan = CC_CALLBACK_2(TestLayer::onTouchBegan, this);
-	listener->onTouchMoved = CC_CALLBACK_2(TestLayer::onTouchMoved, this);
-	listener->onTouchEnded = CC_CALLBACK_2(TestLayer::onTouchEnded, this);
-    
-	auto listener2 = EventListenerTouchAllAtOnce::create();
-	listener2->onTouchesBegan = CC_CALLBACK_2(TestLayer::onTouchesBegan, this);
-	listener2->onTouchesMoved = CC_CALLBACK_2(TestLayer::onTouchesMoved, this);
-	listener2->onTouchesEnded = CC_CALLBACK_2(TestLayer::onTouchesEnded, this);
-    
-	//将监听委派到这个layer，并设置优先级
-	auto dispatcher = Director::getInstance()->getEventDispatcher();
-    //	dispatcher->addEventListenerWithSceneGraphPriority(listener2, this);
-    //	dispatcher->setPriority(listener2, 1);
-    
-    dispatcher->addEventListenerWithSceneGraphPriority(listener, this);
-	dispatcher->setPriority(listener, 1);
+    this->setTouchEnabled();
+    //this->setTouchesEnabled();
     
 //    this->setTouchEnabled(true);
 //    Size visibleSize = Director::getInstance()->getVisibleSize();
@@ -83,15 +68,19 @@ bool TestLayer::onTouchBegan(Touch *touch, Event *unused_event)
     return true;
 }
 
+void TestLayer::onTouchesBegan(const std::vector<Touch*>& touches, Event *unused_event)
+{
+    CGFLayer::onTouchesBegan(touches, unused_event);
+    //do something
+}
+
 void TestLayer::menuCloseCallback(Ref* pSender)
 {
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_WP8) || (CC_TARGET_PLATFORM == CC_PLATFORM_WINRT)
 	MessageBox("You pressed the close button. Windows Store Apps do not implement a close button.","Alert");
     return;
 #endif
-
     Director::getInstance()->end();
-
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_IOS)
     exit(0);
 #endif
