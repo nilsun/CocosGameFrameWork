@@ -30,7 +30,7 @@ bool AppDelegate::applicationDidFinishLaunching() {
     auto scene = TestScene::create();
     auto layer = TestLayer::create();
     layer->setCGFLayerDelegate(scene);
-    scene->addChild(layer);
+    scene->addSceneMainLayer(layer);
     director->runWithScene(scene);
 
     return true;

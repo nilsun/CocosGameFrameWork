@@ -7,3 +7,10 @@
 //
 
 #include "CGFScene.h"
+
+
+void CGFScene::addSceneMainLayer(Layer* pLayer)
+{
+    this->addChild(pLayer);
+    m_pMainLayer = pLayer;
+}
