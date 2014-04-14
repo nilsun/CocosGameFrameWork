@@ -17,10 +17,10 @@ class CGFLayerDelegate;
 class CGFLayer : public Layer
 {
 public:
-    CREATE_FUNC(CGFLayer);
-
     CGFLayerDelegate* m_pLayerDelegate;
     
+    CREATE_FUNC(CGFLayer);
+
     void setCGFLayerDelegate(CGFLayerDelegate* pLayerDelegate){ m_pLayerDelegate = pLayerDelegate; }
     
     virtual bool onTouchBegan(Touch *touch, Event *unused_event);

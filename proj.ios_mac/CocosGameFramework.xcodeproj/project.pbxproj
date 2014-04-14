@@ -70,8 +70,8 @@
 		BB3161C418F56F7200F6803A /* CGFLayerDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB3161C118F56F7200F6803A /* CGFLayerDelegate.cpp */; };
 		BB37C34218F7F63F0071ACBA /* TestScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB37C34018F7F63F0071ACBA /* TestScene.cpp */; };
 		BB37C34318F7F63F0071ACBA /* TestScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB37C34018F7F63F0071ACBA /* TestScene.cpp */; };
-		BB37C35318FA3F500071ACBA /* CGFGameState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB37C35118FA3F500071ACBA /* CGFGameState.cpp */; };
-		BB37C35418FA3F500071ACBA /* CGFGameState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB37C35118FA3F500071ACBA /* CGFGameState.cpp */; };
+		BB37C35718FAB74F0071ACBA /* CGFGameStateCenter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB37C35518FAB74F0071ACBA /* CGFGameStateCenter.cpp */; };
+		BB37C35818FAB74F0071ACBA /* CGFGameStateCenter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB37C35518FAB74F0071ACBA /* CGFGameStateCenter.cpp */; };
 		BF171245129291EC00B8313A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB012928DE900B8313A /* OpenGLES.framework */; };
 		BF1712471292920000B8313A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB412928DE900B8313A /* libz.dylib */; };
 		BF1C47F01293687400B63C5D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1C47EA1293683800B63C5D /* QuartzCore.framework */; };
@@ -279,8 +279,8 @@
 		BB37C34018F7F63F0071ACBA /* TestScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TestScene.cpp; path = ../Classes/TestScene.cpp; sourceTree = "<group>"; };
 		BB37C34118F7F63F0071ACBA /* TestScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestScene.h; path = ../Classes/TestScene.h; sourceTree = "<group>"; };
 		BB37C34918F8F0220071ACBA /* CGFMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGFMacros.h; path = ../Classes/CGFMacros.h; sourceTree = "<group>"; };
-		BB37C35118FA3F500071ACBA /* CGFGameState.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CGFGameState.cpp; path = ../Classes/CGFGameState.cpp; sourceTree = "<group>"; };
-		BB37C35218FA3F500071ACBA /* CGFGameState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGFGameState.h; path = ../Classes/CGFGameState.h; sourceTree = "<group>"; };
+		BB37C35518FAB74F0071ACBA /* CGFGameStateCenter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CGFGameStateCenter.cpp; path = ../Classes/CGFGameStateCenter.cpp; sourceTree = "<group>"; };
+		BB37C35618FAB74F0071ACBA /* CGFGameStateCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGFGameStateCenter.h; path = ../Classes/CGFGameStateCenter.h; sourceTree = "<group>"; };
 		BF170DB012928DE900B8313A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		BF170DB412928DE900B8313A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		BF1C47EA1293683800B63C5D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -370,8 +370,8 @@
 				BB3161C118F56F7200F6803A /* CGFLayerDelegate.cpp */,
 				BB3161C218F56F7200F6803A /* CGFLayerDelegate.h */,
 				BB37C34918F8F0220071ACBA /* CGFMacros.h */,
-				BB37C35118FA3F500071ACBA /* CGFGameState.cpp */,
-				BB37C35218FA3F500071ACBA /* CGFGameState.h */,
+				BB37C35518FAB74F0071ACBA /* CGFGameStateCenter.cpp */,
+				BB37C35618FAB74F0071ACBA /* CGFGameStateCenter.h */,
 			);
 			name = Classes;
 			path = ../classes;
@@ -703,10 +703,10 @@
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
 				1AFAF8B716D35DE700DB1158 /* AppDelegate.cpp in Sources */,
-				BB37C35318FA3F500071ACBA /* CGFGameState.cpp in Sources */,
 				503AE10117EB989F00D1A890 /* main.m in Sources */,
 				BB3161C318F56F7200F6803A /* CGFLayerDelegate.cpp in Sources */,
 				BB37C34218F7F63F0071ACBA /* TestScene.cpp in Sources */,
+				BB37C35718FAB74F0071ACBA /* CGFGameStateCenter.cpp in Sources */,
 				1AFAF8B816D35DE700DB1158 /* TestLayer.cpp in Sources */,
 				BB3161B418F5654500F6803A /* CGFLayer.cpp in Sources */,
 			);
@@ -719,8 +719,8 @@
 				BB3161B518F5654500F6803A /* CGFLayer.cpp in Sources */,
 				5087E75717EB910900C73F5D /* AppDelegate.cpp in Sources */,
 				5087E75817EB910900C73F5D /* TestLayer.cpp in Sources */,
+				BB37C35818FAB74F0071ACBA /* CGFGameStateCenter.cpp in Sources */,
 				BB37C34318F7F63F0071ACBA /* TestScene.cpp in Sources */,
-				BB37C35418FA3F500071ACBA /* CGFGameState.cpp in Sources */,
 				BB3161AF18F5636B00F6803A /* CGFScene.cpp in Sources */,
 				503AE10517EB98FF00D1A890 /* main.cpp in Sources */,
 				BB3161C418F56F7200F6803A /* CGFLayerDelegate.cpp in Sources */,
