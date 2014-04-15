@@ -20,7 +20,6 @@ typedef enum
     kGameStateOverLose
 }CGFGameState;
 
-
 class CGFGameStateCenter
 {
 public:

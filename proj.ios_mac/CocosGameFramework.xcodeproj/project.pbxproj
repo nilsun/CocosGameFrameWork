@@ -72,6 +72,8 @@
 		BB37C34318F7F63F0071ACBA /* TestScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB37C34018F7F63F0071ACBA /* TestScene.cpp */; };
 		BB37C35718FAB74F0071ACBA /* CGFGameStateCenter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB37C35518FAB74F0071ACBA /* CGFGameStateCenter.cpp */; };
 		BB37C35818FAB74F0071ACBA /* CGFGameStateCenter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB37C35518FAB74F0071ACBA /* CGFGameStateCenter.cpp */; };
+		BBF35BE018FCCA84007D58E3 /* CGFNotifications.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BBF35BDE18FCCA84007D58E3 /* CGFNotifications.cpp */; };
+		BBF35BE118FCCA84007D58E3 /* CGFNotifications.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BBF35BDE18FCCA84007D58E3 /* CGFNotifications.cpp */; };
 		BF171245129291EC00B8313A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB012928DE900B8313A /* OpenGLES.framework */; };
 		BF1712471292920000B8313A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB412928DE900B8313A /* libz.dylib */; };
 		BF1C47F01293687400B63C5D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1C47EA1293683800B63C5D /* QuartzCore.framework */; };
@@ -281,6 +283,8 @@
 		BB37C34918F8F0220071ACBA /* CGFMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGFMacros.h; path = ../Classes/CGFMacros.h; sourceTree = "<group>"; };
 		BB37C35518FAB74F0071ACBA /* CGFGameStateCenter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CGFGameStateCenter.cpp; path = ../Classes/CGFGameStateCenter.cpp; sourceTree = "<group>"; };
 		BB37C35618FAB74F0071ACBA /* CGFGameStateCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGFGameStateCenter.h; path = ../Classes/CGFGameStateCenter.h; sourceTree = "<group>"; };
+		BBF35BDE18FCCA84007D58E3 /* CGFNotifications.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CGFNotifications.cpp; path = ../Classes/CGFNotifications.cpp; sourceTree = "<group>"; };
+		BBF35BDF18FCCA84007D58E3 /* CGFNotifications.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGFNotifications.h; path = ../Classes/CGFNotifications.h; sourceTree = "<group>"; };
 		BF170DB012928DE900B8313A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		BF170DB412928DE900B8313A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		BF1C47EA1293683800B63C5D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -372,6 +376,8 @@
 				BB37C34918F8F0220071ACBA /* CGFMacros.h */,
 				BB37C35518FAB74F0071ACBA /* CGFGameStateCenter.cpp */,
 				BB37C35618FAB74F0071ACBA /* CGFGameStateCenter.h */,
+				BBF35BDE18FCCA84007D58E3 /* CGFNotifications.cpp */,
+				BBF35BDF18FCCA84007D58E3 /* CGFNotifications.h */,
 			);
 			name = Classes;
 			path = ../classes;
@@ -709,6 +715,7 @@
 				BB37C35718FAB74F0071ACBA /* CGFGameStateCenter.cpp in Sources */,
 				1AFAF8B816D35DE700DB1158 /* TestLayer.cpp in Sources */,
 				BB3161B418F5654500F6803A /* CGFLayer.cpp in Sources */,
+				BBF35BE018FCCA84007D58E3 /* CGFNotifications.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -724,6 +731,7 @@
 				BB3161AF18F5636B00F6803A /* CGFScene.cpp in Sources */,
 				503AE10517EB98FF00D1A890 /* main.cpp in Sources */,
 				BB3161C418F56F7200F6803A /* CGFLayerDelegate.cpp in Sources */,
+				BBF35BE118FCCA84007D58E3 /* CGFNotifications.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
