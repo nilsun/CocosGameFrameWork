@@ -12,7 +12,7 @@
 
 static CGFGameStateCenter *m_pGameStateCenter = nullptr;
 
-CGFGameStateCenter* getInstance()
+CGFGameStateCenter* CGFGameStateCenter::getInstance()
 {
     if (!m_pGameStateCenter)
     {

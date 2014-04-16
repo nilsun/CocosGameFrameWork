@@ -1,5 +1,5 @@
 #include "TestLayer.h"
-
+#include "CGFGameStateCenter.h"
 USING_NS_CC;
 
 bool TestLayer::init()
@@ -11,29 +11,29 @@ bool TestLayer::init()
     }
     
     this->setTouchEnabled();
+    this->observeGameState();
     //this->setTouchesEnabled();
     
-//    this->setTouchEnabled(true);
-//    Size visibleSize = Director::getInstance()->getVisibleSize();
-//    Point origin = Director::getInstance()->getVisibleOrigin();
-//
-//    /////////////////////////////
-//    // 2. add a menu item with "X" image, which is clicked to quit the program
-//    //    you may modify it.
-//
-//    // add a "close" icon to exit the progress. it's an autorelease object
-//    auto closeItem = MenuItemImage::create(
-//                                           "CloseNormal.png",
-//                                           "CloseSelected.png",
-//                                           CC_CALLBACK_1(TestLayer::menuCloseCallback, this));
-//    
-//	closeItem->setPosition(Point(origin.x + visibleSize.width - closeItem->getContentSize().width/2 ,
-//                                origin.y + closeItem->getContentSize().height/2));
-//
-//    // create menu, it's an autorelease object
-//    auto menu = Menu::create(closeItem, NULL);
-//    menu->setPosition(Point::ZERO);
-//    this->addChild(menu, 1);
+    Size visibleSize = Director::getInstance()->getVisibleSize();
+    Point origin = Director::getInstance()->getVisibleOrigin();
+
+    /////////////////////////////
+    // 2. add a menu item with "X" image, which is clicked to quit the program
+    //    you may modify it.
+
+    // add a "close" icon to exit the progress. it's an autorelease object
+    auto closeItem = MenuItemImage::create(
+                                           "CloseNormal.png",
+                                           "CloseSelected.png",
+                                           CC_CALLBACK_1(TestLayer::menuCloseCallback, this));
+    
+	closeItem->setPosition(Point(origin.x + visibleSize.width - closeItem->getContentSize().width/2 ,
+                                origin.y + closeItem->getContentSize().height/2));
+
+    // create menu, it's an autorelease object
+    auto menu = Menu::create(closeItem, NULL);
+    menu->setPosition(Point::ZERO);
+    this->addChild(menu, 1);
 //
 //    /////////////////////////////
 //    // 3. add your codes below...
@@ -65,6 +65,9 @@ bool TestLayer::init()
 bool TestLayer::onTouchBegan(Touch *touch, Event *unused_event)
 {
     CGFLayer::onTouchBegan(touch, unused_event);
+    
+    CGFGameStateCenter::getInstance()->setGameState(kGameStateInit, true);
+
     return true;
 }
 
@@ -72,6 +75,26 @@ void TestLayer::onTouchesBegan(const std::vector<Touch*>& touches, Event *unused
 {
     CGFLayer::onTouchesBegan(touches, unused_event);
     //do something
+}
+
+void TestLayer::onGameInit(Ref* sender)
+{
+    CCLOG("TestLayer::onGameInit: notify success!");
+}
+void TestLayer::onGameGetReady(Ref* sender)
+{
+}
+void TestLayer::onGamePlaying(Ref* sender)
+{
+}
+void TestLayer::onGamePause(Ref* sender)
+{
+}
+void TestLayer::onGameOverWin(Ref* sender)
+{
+}
+void TestLayer::onGameOverLose(Ref* sender)
+{
 }
 
 void TestLayer::menuCloseCallback(Ref* pSender)

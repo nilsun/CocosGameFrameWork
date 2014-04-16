@@ -4,7 +4,7 @@
 #include "cocos2d.h"
 #include "CGFLayer.h"
 #include "CGFMacros.h"
-
+#include "CGFNotifications.h"
 
 using namespace cocos2d;
 class TestLayer : public CGFLayer
@@ -20,9 +20,11 @@ public:
     
     CREATE_FUNC(TestLayer);
     
-    CC_ENABLE_TOUCH_ONE_BY_ONE(TestLayer);
+    CGF_TOUCH_ONE_BY_ONE_FUC(TestLayer);
     
-    //CC_ENABLE_TOUCH_ALL_AT_ONCE(TestLayer);
+//    CGF_TOUCH_ALL_AT_ONCE_FUC(TestLayer);
+    
+    CGF_GAME_STATE_OBSERVE_FUC(TestLayer);
 };
 
 #endif // __HELLOWORLD_SCENE_H__
