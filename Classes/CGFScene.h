@@ -12,6 +12,18 @@
 #include "cocos2d.h"
 #include "CGFLayerDelegate.h"
 
+/** 
+ @brief
+ 
+ CGFScene is mainly designed to be the delegate of layer, the layer can communicate
+ with its scene using delegate method.
+ 
+ @note
+ 
+ Call addSceneMainLayer to add layer if you want to get Layer in scene, so that you scene
+ can also communicates with its layer.
+*/
+
 class CGFScene : public Scene, public CGFLayerDelegate
 {
 public:

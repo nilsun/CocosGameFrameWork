@@ -9,7 +9,9 @@
 #ifndef CocosGameFramework_CGFMacros_h
 #define CocosGameFramework_CGFMacros_h
 
-
+/**
+ Define enable touch fuction setTouchEnabled() and setTouchesEnabled(), and touch handle fuction in Layer
+*/
 #define CGF_TOUCH_ONE_BY_ONE_FUC(__TYPE__) public:\
 void setTouchEnabled() \
 { \
@@ -31,6 +33,12 @@ _touchListener->onTouchesEnded = CC_CALLBACK_2(__TYPE__::onTouchesEnded, this); 
 _touchListener->onTouchesCancelled = CC_CALLBACK_2(__TYPE__::onTouchesCancelled, this); \
 _eventDispatcher->addEventListenerWithSceneGraphPriority(_touchListener, this); \
 } \
+
+/**
+ Define game state observe fuction observeGameState() and handle state change fuction.
+
+ Warning: remember to remove self from notification center when you don't want to get notifications.
+*/
 
 #define CGF_GAME_STATE_OBSERVE_FUC(__TYPE__) public:\
 void observeGameState() \

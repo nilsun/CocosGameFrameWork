@@ -12,8 +12,19 @@
 #define __CocosGameFramework__CGFLayer__
 
 using namespace cocos2d;
-
 class CGFLayerDelegate;
+
+/**
+ @brief
+ 
+ CGFLayer is designed to communicate with its delegate: CGFScene. Now the communications
+ only include touch event dispatching.
+ 
+ @note
+  
+ You should call setCGFLayerDelegate to set a CGFScene delegate to your layer.
+*/
+
 class CGFLayer : public Layer
 {
 public:

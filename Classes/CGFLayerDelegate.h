@@ -11,8 +11,14 @@
 
 #include "cocos2d.h"
 using namespace cocos2d;
-
 class CGFLayer;
+
+/**
+ @brief
+ 
+ CGFLayerDelegate defines protocol the layer's delegate(most time CGFScene) should comform to.
+*/
+
 class CGFLayerDelegate
 {
 public:

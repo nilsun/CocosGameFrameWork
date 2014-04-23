@@ -11,6 +11,9 @@
 
 #include <iostream>
 
+/**
+ Game state changed notifications.
+*/
 extern const std::string kNotificationGameInit;
 extern const std::string kNotificationGameGetReady;
 extern const std::string kNotificationGamePlaying;

@@ -20,6 +20,14 @@ typedef enum
     kGameStateOverLose
 }CGFGameState;
 
+/**
+ @brief
+ 
+ CGFGameStateCenter is a singleton which manages the game state, it can send notifications to others when the game state changes.
+ 
+ @see CGF_GAME_STATE_OBSERVE_FUC in CGFMacros.h, it defines the implementations of observer interested in the notification.
+*/
+
 class CGFGameStateCenter
 {
 public:
@@ -37,6 +45,5 @@ private:
     
     ~CGFGameStateCenter();
 };
-
 
 #endif /* defined(__CocosGameFramework__CGFGameStateCenter__) */

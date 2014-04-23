@@ -72,8 +72,6 @@
 		BB37C34318F7F63F0071ACBA /* TestScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB37C34018F7F63F0071ACBA /* TestScene.cpp */; };
 		BB37C35718FAB74F0071ACBA /* CGFGameStateCenter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB37C35518FAB74F0071ACBA /* CGFGameStateCenter.cpp */; };
 		BB37C35818FAB74F0071ACBA /* CGFGameStateCenter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB37C35518FAB74F0071ACBA /* CGFGameStateCenter.cpp */; };
-		BBA7208818FE34B100BB8250 /* CGFGameStateResponder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BBA7208618FE34B100BB8250 /* CGFGameStateResponder.cpp */; };
-		BBA7208918FE34B100BB8250 /* CGFGameStateResponder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BBA7208618FE34B100BB8250 /* CGFGameStateResponder.cpp */; };
 		BBF35BE018FCCA84007D58E3 /* CGFNotifications.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BBF35BDE18FCCA84007D58E3 /* CGFNotifications.cpp */; };
 		BBF35BE118FCCA84007D58E3 /* CGFNotifications.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BBF35BDE18FCCA84007D58E3 /* CGFNotifications.cpp */; };
 		BF171245129291EC00B8313A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB012928DE900B8313A /* OpenGLES.framework */; };
@@ -285,8 +283,6 @@
 		BB37C34918F8F0220071ACBA /* CGFMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGFMacros.h; path = ../Classes/CGFMacros.h; sourceTree = "<group>"; };
 		BB37C35518FAB74F0071ACBA /* CGFGameStateCenter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CGFGameStateCenter.cpp; path = ../Classes/CGFGameStateCenter.cpp; sourceTree = "<group>"; };
 		BB37C35618FAB74F0071ACBA /* CGFGameStateCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGFGameStateCenter.h; path = ../Classes/CGFGameStateCenter.h; sourceTree = "<group>"; };
-		BBA7208618FE34B100BB8250 /* CGFGameStateResponder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CGFGameStateResponder.cpp; path = ../Classes/CGFGameStateResponder.cpp; sourceTree = "<group>"; };
-		BBA7208718FE34B100BB8250 /* CGFGameStateResponder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGFGameStateResponder.h; path = ../Classes/CGFGameStateResponder.h; sourceTree = "<group>"; };
 		BBF35BDE18FCCA84007D58E3 /* CGFNotifications.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CGFNotifications.cpp; path = ../Classes/CGFNotifications.cpp; sourceTree = "<group>"; };
 		BBF35BDF18FCCA84007D58E3 /* CGFNotifications.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGFNotifications.h; path = ../Classes/CGFNotifications.h; sourceTree = "<group>"; };
 		BF170DB012928DE900B8313A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -509,8 +505,6 @@
 				BB37C35618FAB74F0071ACBA /* CGFGameStateCenter.h */,
 				BBF35BDE18FCCA84007D58E3 /* CGFNotifications.cpp */,
 				BBF35BDF18FCCA84007D58E3 /* CGFNotifications.h */,
-				BBA7208618FE34B100BB8250 /* CGFGameStateResponder.cpp */,
-				BBA7208718FE34B100BB8250 /* CGFGameStateResponder.h */,
 			);
 			name = CGFBase;
 			sourceTree = "<group>";
@@ -726,7 +720,6 @@
 				503AE10117EB989F00D1A890 /* main.m in Sources */,
 				BB3161C318F56F7200F6803A /* CGFLayerDelegate.cpp in Sources */,
 				BB37C34218F7F63F0071ACBA /* TestScene.cpp in Sources */,
-				BBA7208818FE34B100BB8250 /* CGFGameStateResponder.cpp in Sources */,
 				BB37C35718FAB74F0071ACBA /* CGFGameStateCenter.cpp in Sources */,
 				1AFAF8B816D35DE700DB1158 /* TestLayer.cpp in Sources */,
 				BB3161B418F5654500F6803A /* CGFLayer.cpp in Sources */,
@@ -745,7 +738,6 @@
 				BB37C34318F7F63F0071ACBA /* TestScene.cpp in Sources */,
 				BB3161AF18F5636B00F6803A /* CGFScene.cpp in Sources */,
 				503AE10517EB98FF00D1A890 /* main.cpp in Sources */,
-				BBA7208918FE34B100BB8250 /* CGFGameStateResponder.cpp in Sources */,
 				BB3161C418F56F7200F6803A /* CGFLayerDelegate.cpp in Sources */,
 				BBF35BE118FCCA84007D58E3 /* CGFNotifications.cpp in Sources */,
 			);
